@@ -17,7 +17,7 @@
 </script>
 
 <template>
-    <div class="flex justify-around items-center h-screen bg-blue-100">
+    <div class="flex justify-around items-center h-screen">
         <div class="w-full flex justify-around items-center gap-8">
             <div>
                 <div class="flex flex-col mb-4">
