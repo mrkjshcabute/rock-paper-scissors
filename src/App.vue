@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="bg-blue-100">
     <router-link to="/"></router-link>
     <router-link to="/main"></router-link>
   </div>

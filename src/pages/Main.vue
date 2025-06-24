@@ -90,7 +90,7 @@ function goHome() {
       <transition name="fade" mode="out-in">
         <div v-if="showResult" key="result" class="text-center text-xl space-y-4 flex flex-col items-center justify-around h-screen">
           <div>
-            <p class="mb-8 capitalize bg-[#8DBCC7] rounded-full p-1 text-white">{{ name }}</p>
+            <p class="mb-8 capitalize bg-[#8DBCC7] rounded-full p-1 font-semibold text-white">{{ name }}</p>
             <p class="mb-2"><strong>{{ userChoice }}</strong></p>
             <img :src="getOptionImage(userChoice)" alt="" class="w-32 mx-auto rotate-180" />
           </div>
@@ -129,7 +129,7 @@ function goHome() {
                 :key="option.name"
                 @click="play(option)"
                 :class="[
-                  'px-4 py-2 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 transition transform hover:scale-105 flex flex-col items-center justify-center cursor-pointer hover:outline-2 hover:outline-[#8DBCC7]',
+                  'px-4 py-2 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 transition transform hover:scale-105 flex flex-col items-center justify-center cursor-pointer focus:bg-[#A4CCD9]/50 focus:outline-2 focus:outline-[#8DBCC7] hover:outline-2 hover:outline-[#8DBCC7]',
                   index === 1 ? '-translate-y-12' : ''
                 ]"
               >
