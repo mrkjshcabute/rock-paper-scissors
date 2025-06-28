@@ -24,7 +24,7 @@ A sleek and fun **Rock-Paper-Scissors** game built with **Vue 3** and **PrimeVue
 ## 📸 Preview
 
 ### Home Screen
-![Game Screenshot 1](screenshots/screenshot1.jpg)
+![Game Screenshot 1](screenshots/1.jpg)
 
 ### Game Screen
-![Game Screenshot 2](screenshots/screenshot2.jpg)
+![Game Screenshot 2](screenshots/2.jpg)
