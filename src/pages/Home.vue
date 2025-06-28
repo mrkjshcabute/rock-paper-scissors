@@ -12,18 +12,18 @@
             return;
         }
         invalid.value = false;
-        router.push({ name: 'Main', query: { search: name.value } });
+        router.push({ name: 'Main', query: { name: name.value } });
     }
 </script>
 
 <template>
     <div class="flex justify-around items-center h-screen">
-        <div class="w-full flex justify-around items-center gap-8">
+        <div class="w-full flex justify-around items-center gap-8 mx-[20px]">
             <div>
                 <div class="flex flex-col mb-4">
-                    <h1 class="text-8xl text-center md:text-9xl font-bold text-gray-800 leading-[0.8]">ROCK</h1>
-                    <h1 class="text-[84px] text-center md:text-[112px] font-bold text-gray-800 p-0 leading-[1]">PAPER</h1>
-                    <h1 class="text-[56px] text-center md:text-[76px] font-bold text-gray-800 leading-[0.8]">SCISSORS</h1>
+                    <h1 class="text-[100px] md:text-9xl font-bold text-gray-800 leading-[0.8]">ROCK</h1>
+                    <h1 class="text-[86px] md:text-[112px] font-bold text-gray-800 p-0 leading-[1]">PAPER</h1>
+                    <h1 class="text-[59px] md:text-[77px] font-bold text-gray-800 leading-[0.8]">SCISSORS</h1>
                 </div>
 
                 <input
@@ -38,7 +38,7 @@
                 />
             </div>
 
-            <img src="../assets/pic.png" alt="" class="hidden md:block">
+            <img src="../assets/pic.png" alt="" class="hidden md:block w-[40%]">
         </div>
     </div>
 </template>

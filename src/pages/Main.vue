@@ -23,8 +23,8 @@ const userScore = ref(0);
 const computerScore = ref(0);
 
 onMounted(() => {
-  if (route.query.search) {
-    name.value = route.query.search;
+  if (route.query.name) {
+    name.value = route.query.name;
   }
 });
 
@@ -92,13 +92,13 @@ function goHome() {
           <div>
             <p class="mb-8 capitalize bg-[#8DBCC7] rounded-full p-1 font-semibold text-white">{{ name }}</p>
             <p class="mb-2"><strong>{{ userChoice }}</strong></p>
-            <img :src="getOptionImage(userChoice)" alt="" class="w-32 mx-auto rotate-180" />
+            <img :src="getOptionImage(userChoice)" alt="" class="w-30 md:w-32 mx-auto rotate-180" />
           </div>
 
-          <h1 :class="['text-6xl font-bold mb-4', resultColor]">{{ resultText }}</h1>
+          <h1 :class="['text-[40px] font-bold mb-4', resultColor]">{{ resultText }}</h1>
 
           <div>
-            <img :src="getOptionImage(computerChoice)" alt="" class="w-32 mx-auto" />
+            <img :src="getOptionImage(computerChoice)" alt="" class="w-30 md:w-32 mx-auto" />
             <p class="mt-2"><strong>{{ computerChoice }}</strong></p>
             <p class="mt-8 bg-[#8DBCC7] rounded-full p-2 font-semibold text-white">Computer</p>
           </div>
@@ -117,9 +117,9 @@ function goHome() {
           </div>
 
           <div class="flex flex-col items-center mb-8 cursor-pointer" @click="goHome()">
-            <h1 class="text-7xl font-bold text-gray-800 leading-[0.8]">ROCK</h1>
-            <h1 class="text-[64px] font-bold text-gray-800 p-0 leading-[1]">PAPER</h1>
-            <h1 class="text-[42px] font-bold text-gray-800 leading-[0.8]">SCISSORS</h1>
+            <h1 class="text-[76px] font-bold text-gray-800 leading-[0.8] ">ROCK</h1>
+            <h1 class="text-[64px] font-bold text-gray-800 p-0 leading-[1] ">PAPER</h1>
+            <h1 class="text-[44px] font-bold text-gray-800 leading-[0.8] ">SCISSORS</h1>
           </div>
 
           <div>
@@ -129,7 +129,7 @@ function goHome() {
                 :key="option.name"
                 @click="play(option)"
                 :class="[
-                  'px-4 py-2 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 transition transform hover:scale-105 flex flex-col items-center justify-center cursor-pointer focus:bg-[#A4CCD9]/50 focus:outline-2 focus:outline-[#8DBCC7] hover:outline-2 hover:outline-[#8DBCC7]',
+                  'px-4 py-2 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 transition transform hover:scale-105 flex flex-col items-center justify-center cursor-pointer active:bg-[#A4CCD9]/50 active:scale-105 active:outline-2 active:outline-[#8DBCC7] hover:outline-2 hover:outline-[#8DBCC7]',
                   index === 1 ? '-translate-y-12' : ''
                 ]"
               >
@@ -138,7 +138,7 @@ function goHome() {
             </div>
             <div class="flex justify-center items-center">
               <button
-                class="p-6 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 transition transform hover:scale-105 flex flex-col items-center justify-center cursor-pointer hover:outline-2 hover:outline-[#8DBCC7] -translate-y-4"
+                class="p-6 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 active:bg-[#A4CCD9]/50 transition transform hover:scale-105 active:scale-105 flex flex-col items-center justify-center cursor-pointer hover:outline-2 hover:outline-[#8DBCC7] active:outline-2 active:outline-[#8DBCC7] -translate-y-4"
                 @click="resetScore"
               >
                 <i class="pi pi-sync text-black" style="font-size: 1.5rem"></i>
@@ -154,7 +154,7 @@ function goHome() {
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease;
+  transition: opacity 0.6s ease;
 }
 .fade-enter-from,
 .fade-leave-to {
