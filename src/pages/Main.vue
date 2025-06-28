@@ -85,7 +85,7 @@ function goHome() {
 </script>
 
 <template>
-  <div class="h-screen  flex flex-col items-center justify-center p-4">
+  <div class="h-screen flex flex-col items-center justify-center p-4">
     <div class="w-[20rem] md:w-[25rem]">
       <transition name="fade" mode="out-in">
         <div v-if="showResult" key="result" class="text-center text-xl space-y-4 flex flex-col items-center justify-around h-screen">
