@@ -4,7 +4,7 @@ A sleek and fun **Rock-Paper-Scissors** game built with **Vue 3** and **PrimeVue
 
 ## 🔗 Live Demo
 
-👉 [Play it here](https://your-live-demo-link.com)
+👉 [Play it here](https://rock-paper-scissors-six-steel.vercel.app/)
 
 ## 🎮 Features
 
@@ -20,17 +20,3 @@ A sleek and fun **Rock-Paper-Scissors** game built with **Vue 3** and **PrimeVue
 - Vue 3
 - PrimeVue
 - Vite
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js & npm installed
-
-### Installation
-
-```bash
-git clone https://github.com/mrkjshcabute/rock-paper-scissors.git
-cd rock-paper-scissors
-npm install
-npm run dev
