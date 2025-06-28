@@ -2,10 +2,6 @@
 
 A sleek and fun **Rock-Paper-Scissors** game built with **Vue 3** and **PrimeVue**. Challenge the computer, track your score, and enjoy a smooth animated experience.
 
-## 🔗 Live Demo
-
-👉 [Play it here](https://rock-paper-scissors-six-steel.vercel.app/)
-
 ## 🎮 Features
 
 - ⚡ Instant play with real-time results  
@@ -20,3 +16,15 @@ A sleek and fun **Rock-Paper-Scissors** game built with **Vue 3** and **PrimeVue
 - Vue 3
 - PrimeVue
 - Vite
+
+## 🌐 Live Demo
+
+[Play Rock-Paper-Scissors](https://rock-paper-scissors-six-steel.vercel.app/)
+
+## 📸 Preview
+
+### Home Screen
+![Game Screenshot 1](screenshots/screenshot1.jpg)
+
+### Game Screen
+![Game Screenshot 2](screenshots/screenshot2.jpg)
