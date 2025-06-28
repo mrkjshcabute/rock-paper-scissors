@@ -13,9 +13,9 @@ A sleek and fun **Rock-Paper-Scissors** game built with **Vue 3** and **PrimeVue
 
 ## 🛠️ Built With
 
-- [Vue 3](https://vuejs.org/) — Progressive JavaScript Framework  
-- [PrimeVue](https://primevue.org/) — Powerful UI component library for Vue  
-- [Vite](https://vitejs.dev/) — Lightning-fast frontend tooling  
+- Vue 3
+- PrimeVue
+- Vite
 
 ## 🚀 Getting Started
 
@@ -26,7 +26,7 @@ A sleek and fun **Rock-Paper-Scissors** game built with **Vue 3** and **PrimeVue
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/rock-paper-scissors.git
+git clone https://github.com/mrkjshcabute/rock-paper-scissors.git
 cd rock-paper-scissors
 npm install
 npm run dev
