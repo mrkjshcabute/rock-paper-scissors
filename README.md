@@ -1,29 +1,32 @@
-# rock-paper-scissor
+# 🪨📄✂️ Rock-Paper-Scissors
 
-This template should help get you started developing with Vue 3 in Vite.
+A sleek and fun **Rock-Paper-Scissors** game built with **Vue 3** and **PrimeVue**. Challenge the computer, track your score, and enjoy a smooth animated experience.
 
-## Recommended IDE Setup
+## 🎮 Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- ⚡ Instant play with real-time results  
+- 🧠 Computer-generated choices  
+- 📊 Score tracking  
+- 🎨 Styled with **PrimeVue** components for a modern UI  
+- 🕹️ Interactive button animations and game flow  
+- ⏳ Timed result display for immersive gameplay  
 
-## Customize configuration
+## 🛠️ Built With
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- [Vue 3](https://vuejs.org/) — Progressive JavaScript Framework  
+- [PrimeVue](https://primevue.org/) — Powerful UI component library for Vue  
+- [Vite](https://vitejs.dev/) — Lightning-fast frontend tooling  
 
-## Project Setup
+## 🚀 Getting Started
 
-```sh
+### Prerequisites
+
+- Node.js & npm installed
+
+### Installation
+
+```bash
+git clone https://github.com/yourusername/rock-paper-scissors.git
+cd rock-paper-scissors
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
