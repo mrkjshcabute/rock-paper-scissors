@@ -2,6 +2,10 @@
 
 A sleek and fun **Rock-Paper-Scissors** game built with **Vue 3** and **PrimeVue**. Challenge the computer, track your score, and enjoy a smooth animated experience.
 
+## 🔗 Live Demo
+
+👉 [Play it here](https://your-live-demo-link.com)
+
 ## 🎮 Features
 
 - ⚡ Instant play with real-time results  
