@@ -29,16 +29,19 @@ onMounted(() => {
 });
 
 function play(user) {
-  userChoice.value = user.name;
-  computerChoice.value = options[Math.floor(Math.random() * options.length)].name;
-  result.value = getResult(userChoice.value, computerChoice.value);
-  updateScore(result.value);
-  showResult.value = true;
-
   setTimeout(() => {
-    showResult.value = false;
-  }, 2500);
+    userChoice.value = user.name;
+    computerChoice.value = options[Math.floor(Math.random() * options.length)].name;
+    result.value = getResult(userChoice.value, computerChoice.value);
+    updateScore(result.value);
+    showResult.value = true;
+
+    setTimeout(() => {
+      showResult.value = false;
+    }, 2500);
+  }, 80); 
 }
+
 
 function getResult(user, computer) {
   if (user === computer) return 'draw';
@@ -90,7 +93,7 @@ function goHome() {
       <transition name="fade" mode="out-in">
         <div v-if="showResult" key="result" class="text-center text-xl space-y-4 flex flex-col items-center justify-around h-screen">
           <div>
-            <p class="mb-8 capitalize bg-[#8DBCC7] rounded-full p-1 font-semibold text-white">{{ name }}</p>
+            <p class="mb-8 capitalize bg-[#8DBCC7] rounded-full p-1 px-4 font-semibold text-white">{{ name }}</p>
             <p class="mb-2"><strong>{{ userChoice }}</strong></p>
             <img :src="getOptionImage(userChoice)" alt="" class="w-30 md:w-32 mx-auto rotate-180" />
           </div>
@@ -100,12 +103,12 @@ function goHome() {
           <div>
             <img :src="getOptionImage(computerChoice)" alt="" class="w-30 md:w-32 mx-auto" />
             <p class="mt-2"><strong>{{ computerChoice }}</strong></p>
-            <p class="mt-8 bg-[#8DBCC7] rounded-full p-2 font-semibold text-white">Computer</p>
+            <p class="mt-8 bg-[#8DBCC7] rounded-full p-2 px-4 font-semibold text-white">Computer</p>
           </div>
         </div>
 
         <div v-else class="flex flex-col items-center justify-between h-screen pt-4">
-          <div class="flex gap-8 text-lg mb-6 w-full">
+          <div class="flex gap-8 text-lg mb-6 w-full text-center">
             <div class="bg-[#A4CCD9] rounded-xl flex flex-col items-center p-4 w-[50%]">
               <p class="text-6xl font-bold text-gray-800 mb-4">{{ userScore }}</p>
               <p class="capitalize">{{ name }}</p>
@@ -129,7 +132,7 @@ function goHome() {
                 :key="option.name"
                 @click="play(option)"
                 :class="[
-                  'px-4 py-2 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 transition transform hover:scale-105 flex flex-col items-center justify-center cursor-pointer active:bg-[#A4CCD9]/50 active:scale-105 active:outline-2 active:outline-[#8DBCC7] hover:outline-2 hover:outline-[#8DBCC7]',
+                  'px-4 py-2 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 transition transform hover:scale-105 flex flex-col items-center justify-center cursor-pointer active:bg-[#A4CCD9]/50 active:scale-105 active:outline-2 active:outline-[#8DBCC7] active:duration-150 hover:outline-2 hover:outline-[#8DBCC7]',
                   index === 1 ? '-translate-y-12' : ''
                 ]"
               >
@@ -138,7 +141,7 @@ function goHome() {
             </div>
             <div class="flex justify-center items-center">
               <button
-                class="p-6 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 active:bg-[#A4CCD9]/50 transition transform hover:scale-105 active:scale-105 flex flex-col items-center justify-center cursor-pointer hover:outline-2 hover:outline-[#8DBCC7] active:outline-2 active:outline-[#8DBCC7] -translate-y-4"
+                class="p-6 rounded-full bg-white/50 text-white hover:bg-[#A4CCD9]/50 active:bg-[#A4CCD9]/50 transition transform hover:scale-105 active:scale-105 flex flex-col items-center justify-center cursor-pointer hover:outline-2 hover:outline-[#8DBCC7] active:outline-2 active:duration-150 active:outline-[#8DBCC7] -translate-y-4"
                 @click="resetScore"
               >
                 <i class="pi pi-sync text-black" style="font-size: 1.5rem"></i>
